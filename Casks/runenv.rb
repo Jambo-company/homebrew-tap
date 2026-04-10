@@ -7,7 +7,7 @@ cask "runenv" do
     sha256 "cbc2f8cc446a7f152a60f37f4af9285f166fac4203ba4b45ba01feb32a513841"
   end
 
-  url "https://github.com/Jambo-company/homebrew-tap/releases/download/v#{version}/RunEnv%20Desktop-#{version}-mac-#{arch}.dmg"
+  url "https://github.com/Jambo-company/homebrew-tap/releases/download/v#{version}/RunEnv.Desktop-#{version}-mac-#{arch}.dmg"
   
   name "RunEnv Desktop"
   desc "Enterprise-grade Secret Management Desktop Application"
