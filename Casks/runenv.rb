@@ -1,10 +1,10 @@
 cask "runenv" do
   arch arm: "arm64"
 
-  version "0.1.3"
+  version "0.1.4"
   
   on_arm do
-    sha256 "0b9fecbd82e4a6ff1630c9d2050dc30c3f098cb9a6d118ac54ee7f53a54e3787"
+    sha256 "74aafa26f7a61b3f4e72a7d185bdc9e83152059b7ea1219ab0d61663616b9dcc"
   end
 
   url "https://github.com/Jambo-company/homebrew-tap/releases/download/v#{version}/RunEnv.Desktop-#{version}-mac-#{arch}.dmg"
