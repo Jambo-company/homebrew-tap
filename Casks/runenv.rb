@@ -1,6 +1,6 @@
 cask "runenv" do
-  version "0.1.8"
-  sha256 "6f73be1e222ddebe1660a2a74f220cd78c407b0d1bd45bb837a28c50816702a0"
+  version "0.1.9"
+  sha256 "d794a915948a68203046bea4441ff2c3e76790cdabcafe0bfc7050eef2984a58"
 
   url "https://github.com/Jambo-company/homebrew-tap/releases/download/v#{version}/RunEnv.Desktop-#{version}-mac-universal.dmg"
   
