@@ -7,7 +7,7 @@ cask "orlim" do
   desc "Menu bar workstation for AI coding tools, usage limits, and system health"
   homepage "https://jambo.team/"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Orlim.app"
 
