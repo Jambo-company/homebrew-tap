@@ -1,6 +1,6 @@
 cask "orlim" do
   version "1.0"
-  sha256 "7051910ce4f7c0e86053aeaf08611007c7c8d69e0693f3246ed7aea31cd19642"
+  sha256 "5de725a0e416f0a8d45eb5b89f647b099f25f75204e0952dc8dd3913909e0045"
 
   url "https://github.com/Jambo-company/homebrew-tap/releases/download/orlim-v#{version}/Orlim-#{version}-mac-universal.dmg"
   name "Orlim"
