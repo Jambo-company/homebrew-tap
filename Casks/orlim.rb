@@ -1,8 +1,8 @@
 cask "orlim" do
-  version "1.0"
-  sha256 "c0ad318bc0f1e08e313cc204dd5550838331e8f4c124fcd0026b7012ab7cc7bc"
+  version "1.0,23"
+  sha256 "e8710b20e98669648effbf1e4d5bd80074f2976ceb0f0113d74bd780eb9496cf"
 
-  url "https://github.com/Jambo-company/homebrew-tap/releases/download/orlim-v#{version}/Orlim-#{version}-mac-universal.dmg"
+  url "https://github.com/Jambo-company/homebrew-tap/releases/download/orlim-v#{version.csv.first}/Orlim-#{version.csv.first}-mac-universal.dmg"
   name "Orlim"
   desc "Menu bar workstation for AI coding tools, usage limits, and system health"
   homepage "https://jambo.team/"
