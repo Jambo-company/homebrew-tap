@@ -2,12 +2,24 @@ cask "orlim" do
   version "2.0,42"
   sha256 "db169ef1cf0c687460f2ef8efab91ec4042140129fdb434aaa5de0ff422ee086"
 
-  url "https://github.com/Jambo-company/homebrew-tap/releases/download/orlim-v#{version.csv.first}/Orlim-#{version.csv.first}-mac-universal.dmg"
+  url "https://github.com/Jambo-company/orlim-releases/releases/download/v#{version.csv.first}-#{version.csv.second}/Orlim-#{version.csv.first}-#{version.csv.second}-mac-universal.dmg",
+      verified: "github.com/Jambo-company/orlim-releases/"
   name "Orlim"
   desc "Menu bar workstation for AI coding tools, usage limits, and system health"
   homepage "https://jambo.team/"
 
-  depends_on macos: :ventura
+  livecheck do
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)-(\d+)$/i)
+    strategy :github_latest do |json, regex|
+      match = json["tag_name"]&.match(regex)
+      next if match.blank?
+
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
+  depends_on macos: ">= :ventura"
 
   app "Orlim.app"
 
