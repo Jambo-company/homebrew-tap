@@ -1,6 +1,6 @@
 cask "orlim" do
-  version "2.0,47"
-  sha256 "f9558c6eba1d99228426e077d23d832bcad8bee7509a52e01dc62e2e8268590a"
+  version "2.0,51"
+  sha256 "8d88060ed191f064170aeff9150864f702d271cd7223c658058bb483a82b604e"
 
   url "https://github.com/Jambo-company/orlim-releases/releases/download/v#{version.csv.first}-#{version.csv.second}/Orlim-#{version.csv.first}-#{version.csv.second}-mac-universal.dmg",
       verified: "github.com/Jambo-company/orlim-releases/"
